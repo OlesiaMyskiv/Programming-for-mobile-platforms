@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ActivityTwo">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Що для вас є важливішим у мистецтві?"
+            android:textSize="24sp"
+            android:textColor="@color/text_color"/>
+        <Button
+            android:id="@+id/btn_one"
+            style="@style/PinkButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Чітка структура, гармонія форм та ідеальні пропорції"
+            android:onClick="addPointA"/>
+        <Button
+            android:id="@+id/btn_two"
+            style="@style/PinkButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Складність техніки виконання та її оригінальність"
+            android:onClick="addPointB"/>
+        <Button
+            android:id="@+id/btn_three"
+            style="@style/PinkButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Емоційний вплив, настрій та викликані почуття"
+            android:onClick="addPointC"/>
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/text_color"
+            android:text=""/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnActThree"
+        style="@style/PinkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="Перейти до наступного питання" />
+</RelativeLayout>

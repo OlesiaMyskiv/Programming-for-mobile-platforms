@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityFour">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Яке середовище вас найбільше надихає?"
+            android:textSize="24sp"
+            android:textColor="@color/text_color"/>
+
+        <Button
+            android:id="@+id/btn_one"
+            style="@style/PinkButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:onClick="addPointA"
+            android:text="Спеціально організований робочий простір (порядок)" />
+
+        <Button
+            android:id="@+id/btn_two"
+            style="@style/PinkButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:onClick="addPointB"
+            android:text="Природа або відкритий простір" />
+
+        <Button
+            android:id="@+id/btn_three"
+            style="@style/PinkButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:onClick="addPointC"
+            android:text="Гамірне кафе чи творчий хаос" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/text_color"
+            android:text=""/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnActFive"
+        style="@style/PinkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="Перейти до останнього питання" />
+</RelativeLayout>
